@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 4:Validation et accessibilité</title>
+</head>
+<body>
+    <form action="#" method="post">
+    <fieldest>
+        <legend>contactez-vous</legend>
+    </fieldest>
+    </form>
+    <label for="now">NOW :</label>
+    <input type="text" id="nom" name="nom" aria-label="nom complet" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" aria-label="adresse e-mail" required>
+
+    <label for="tel">Tèlèphone</label>
+    <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" tittle="10 chiffres attendus" aria-label="Numèro de tèlèphone">
+
+    <label for="message">message :</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="sumbit">envoyer</button>
+</body>
+</html>
